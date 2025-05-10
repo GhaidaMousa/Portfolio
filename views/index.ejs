@@ -24,7 +24,8 @@
                 <%- include('sidebar.ejs') %>
             </header>
             <!-- ----------- Content -------- -->
-            <main class="col p-3">
+            <main class="col p-3" data-bs-spy="scroll" data-bs-target="#sidebarMenu" data-bs-smooth-scroll="true"
+                tabindex="0">
                 <%- include('me.ejs') %>
                     <%- include('skills.ejs') %>
                         <%- include('project.ejs') %>
@@ -40,10 +41,8 @@
         </script>
     <script src="/code.js"></script>
     <!-- <script>
-        $('header .nav-link').on('click', () => {
-            console.log(this);
-            $(this).addClass('active');
-        })
+        $('header .nav-link').each()
+        
     </script> -->
 
 </body>
